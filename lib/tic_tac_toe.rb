@@ -96,7 +96,6 @@ end
 def play(board)
   turns = 0
   while turns < 9 do
-
     if over?(board)
       if won?(board)
         puts "Congratulations #{winner(board)}!"
