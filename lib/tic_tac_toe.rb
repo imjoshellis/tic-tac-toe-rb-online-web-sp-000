@@ -96,16 +96,17 @@ end
 def play(board)
   turns = 0
   while turns < 9 do
-    turn(board)
+
     if over?(board)
       if won?(board)
-        puts "Congratulations #{winner(board)}, you won!"
+        puts "Congratulations #{winner(board)}!"
         return
       else
         puts "It's a draw!"
         return
       end
     end
+    turn(board)
     turns += 1
   end
 end
