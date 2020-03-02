@@ -32,7 +32,7 @@ def draw?(board)
 end
 
 def over?(board)
-  return full?(board) || won?(board) ? true : false
+  return draw?(board) || won?(board) ? true : false
 end
 
 def winner(board)
@@ -96,7 +96,7 @@ end
 def play(board)
   turns = 0
   while turns < 9 do
-    over?(board) ? nil : nil
+    if over?(board) ? nil : nil
       if won?(board)
         puts "Congratulations #{winner(board)}!"
         return
