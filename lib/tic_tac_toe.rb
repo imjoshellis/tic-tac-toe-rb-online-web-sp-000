@@ -99,11 +99,12 @@ def play(board)
       if won?(board)
         puts "Congratulations #{winner(board)}!"
         return
+      end
       if draw?(board)
         puts "Cat's Game!"
         return
       end
-    
+
     turn(board)
     turns += 1
   end
