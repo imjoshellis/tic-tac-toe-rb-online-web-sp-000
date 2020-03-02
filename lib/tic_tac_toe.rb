@@ -96,15 +96,15 @@ end
 def play(board)
   turns = 0
   while turns < 9 do
-    if over?(board) ? nil : nil
+    if over?(board)
       if won?(board)
         puts "Congratulations #{winner(board)}!"
         return
-      end
-      if draw?(board)
+      else draw?(board)
         puts "Cat's Game!"
         return
       end
+    end
 
     turn(board)
     turns += 1
