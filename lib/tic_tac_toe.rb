@@ -101,7 +101,7 @@ def play(board)
         puts "Congratulations #{winner(board)}!"
         return
       else
-        puts "It's a draw!"
+        puts "Cat's Game!"
         return
       end
     end
