@@ -99,7 +99,7 @@ def play(board)
     turn(board)
     if over?(board)
       if won?(board)
-        puts "Congratulations #{winner?(board)}, you won!"
+        puts "Congratulations #{winner(board)}, you won!"
         return
       else
         puts "It's a draw!"
